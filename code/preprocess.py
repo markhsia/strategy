@@ -6,7 +6,8 @@ import copy
 
 def hltag(data):
     U = set(['just', 'being', 'able', 'over', 'mainly', 'still', 'yet', 'seemed', 'whose', 'based', 'also', 'writer', 'had', 'should', 'to', 'sometimesd', 'has', 'might', 'then', 'very', 'ones', 'whether', 'not', 'during', 'now', 'realize', 'did', 'this', 't', 'each', 'where', 'because', 'doing', 'some', 'likely', 'are', 'further', 'really', 'even', 'what', 'said', 'for', 'lots', 'since', 'please', 'does', 'between', 'probably', 'ever', 'either', 'available', 'be', 'recently', 'however', 'here', 'although', 'by', 'both', 'about', 'anything', 'of', 'could', 'title', 'according', 's', 'or', 'among', 'already', 'suddenly', 'seems', 'simply', 'passage', 'from', 'would', 'whom', 'there', 'been', 'few', 'too', 'was', 'until', 'that', 'but', 'else', 'with', 'than', 'those', 'must', 'showed', 'these', 'will', 'while', 'can', 'were', 'following', 'and', 'do', 'almost', 'is', 'it', 'an', 'as', 'at', 'have', 'seem', 'if', 'again', 'author', 'rather', 'when', 'how', 'other', 'which', 'instead', 'several', 'though', 'may', 'who', 'most', 'such', 'why', 'recent', 'a', 'don', 'especially', 'maybe', 'perhaps', 'so', 'the', 'having', 'nearly'])
-    nlp = spacy.load('en')
+    #nlp = spacy.load('en')
+    nlp = spacy.load('en_core_web_sm')
     salientPosList = ['NN', 'NNP', 'NNPS', 'NNS', 'VB', 'VBD', 'VBG', 'VBN', 'VBP', 'VBZ', 'JJ', 'JJR', 'JJS', 'RB',
                       'RBR', 'RBS', 'CD', 'FW']  # 21 core pos tag
     output = []
